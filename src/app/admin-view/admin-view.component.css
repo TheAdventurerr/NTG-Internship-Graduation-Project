@@ -1,0 +1,17 @@
+.rate{
+    margin-left: 10%;
+    margin-top: -4%;
+}
+.live{
+    margin-left: 15%;
+    
+}
+.cont{
+    display: flex;
+    align-items: center;
+    /* background-color: #1f30c1; */
+}
+
+.background{
+    height: 789.5px;
+}

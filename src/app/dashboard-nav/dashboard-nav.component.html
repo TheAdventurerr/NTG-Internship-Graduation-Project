@@ -1,0 +1,24 @@
+<div id="cont">
+    <nav>
+      <div class="logo">
+        <img src="../../assets/Images/SStorelogo.png" alt="">
+      </div>
+      <strong id="font"><span style="border: 2px solid white; padding: 2px 2px; border-radius: 6px; background-color: white;">Dashboard</span></strong>
+      <div class="links">       
+        <ul>
+        <li routerLink="/Admin-View" routerLinkActive="active"><a>Admin View</a>
+          <img src="../../assets/Images/admin.png" alt="" style="margin-left: -6%; margin-top: -5%;">
+        </li>
+        <li routerLink="/Products-Control" routerLinkActive="active"><a>Products Control</a>
+          <img src="../../assets/Images/control.png" alt="" style="margin-left: -6%; margin-top: -5%;">
+        </li>
+        <li routerLink="/Users-Carts" routerLinkActive="active"><a>Users Carts</a>
+          <img src="../../assets/Images/shopping-cart.png" alt="" style="margin-left: -10%; margin-top: -4%;">
+        </li>
+        </ul>
+      </div>
+      <button (click)="confirmLogout()">Sign Out
+        <!-- <img src="../../assets/Images/logout.png" alt="" style="margin-left: 8%; width: 21px;">   -->
+      </button>
+    </nav>  
+</div>

@@ -1,0 +1,33 @@
+<div id="cont">
+  <nav>
+    <div class="logo">
+      <img src="../../assets/Images/SStorelogo.png" alt="" routerLink="/Products">
+    </div>
+    <div class="form-group" style=" margin-top: 1%;">
+      <input type="text" class="form-control" placeholder="Search for products">
+    </div>
+    <div class="searchicon"><img src="../../assets/Images/ssearchicon.png" alt="" ></div>
+    <div class="links">       
+      <ul>
+      <li routerLink="/Products" routerLinkActive="active"><a>Products</a>
+        <img src="../../assets/Images/bag.png" alt="" style="margin-left: -10%; margin-top: -4%;">
+      </li>
+      <li routerLink="/Feedback" routerLinkActive="active"><a>Feedback</a>
+        <img src="../../assets/Images/feedback.png" alt="" style="margin-left: -9%; margin-top: -7%;">
+      </li>
+      <li routerLink="/Contact-us" routerLinkActive="active"><a>Contact us</a>
+        <img src="../../assets/Images/customer-service.png" alt="" style="margin-left: -10%;">
+      </li>
+      </ul>
+    </div>
+    <div class="cart"><button routerLink="/Cart">
+      <img src="../../assets/Images/cart.png" alt="" style="width: 55px;">
+    </button>
+    <div style="font-size: 11px;" class="badge bg-danger" id="cartnumber" style="color: white; font-weight: bold; font-size: 13px;">{{cartProducts.length}}</div>
+    </div>
+    <img src="../../assets/Images/info.png" alt="" id="info" routerLink="/About">
+    <button (click)="confirmLogout()" id="bttn">Sign out
+      <!-- <img src="../../assets/Images/logout.png" alt="" style="margin-left: 8%; width: 22px;"> -->
+    </button>
+  </nav>
+</div>

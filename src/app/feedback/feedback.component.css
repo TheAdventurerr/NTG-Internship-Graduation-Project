@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.colorr{
+    background: #f1b4b4;
+    width: 100%;
+    height: 95vh;
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px 2px #f88888; 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #f1b4b4;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  padding: 1rem 7rem 1rem 7rem;
+  text-align: center;
+  width: 100%;
+  background: #f1b4b4;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

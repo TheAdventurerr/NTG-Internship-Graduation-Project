@@ -1,0 +1,23 @@
+<div class="card">
+    <div routerLink="/Product-Details/{{data.id}}">
+        <div class="image">
+            <img src="{{data.image}}" alt="" />
+        </div>
+        <div class="content">
+            <br>
+        <div class="body">
+            <h4>{{data.title}}</h4>
+            <p>{{data.description}}</p>
+        </div>
+        </div>
+    </div>
+    <div class="px-3 mb-2  justify-content-between align-items-center ">
+        <button class="btn btn-success" *ngIf="!addButton" (click)="addButton = true" style="background-color: #f75959; border: none;"> Add To Cart</button>
+        <div class="d-flex w-50.5" *ngIf="addButton">
+            <input type="number" class="form-control" [(ngModel)]="amount">
+            <button class="btn btn-danger" (click)="add();addButton = false" style="height: 37px;">Add</button>
+        <span> ${{data.price}}</span>
+        </div>
+        <span *ngIf="!addButton" (click)="addButton = true">${{data.price}}</span>
+    </div>
+</div>

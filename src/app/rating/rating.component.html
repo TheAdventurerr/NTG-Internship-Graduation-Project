@@ -1,0 +1,28 @@
+<div class="backk">
+  <app-dashboard-nav></app-dashboard-nav>
+    <div class="container mt-4">
+          <table class="table">
+        <thead>
+          <tr>
+            <th style="color: #ff6666;"></th>
+            <th style="color: #ff6666;">ID</th>
+            <th style="color: #ff6666;">Name</th>
+            <th style="color: #c62c6e;">Category</th>
+            <th style="color: #ffa41c;">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of products">
+            <td><img [src]="item.image" alt="Product Image" width="50"></td>
+            <td style="color: red; font-weight: bold;">{{ item.id }}</td>
+            <td style="color: #ff6666; font-weight: bold;">{{ item.title }}</td>
+            <td style="color: #c62c6e; font-weight: bold;">{{ item.category }}</td>
+            <td style="color: #ffa41c; font-weight: bold;">{{ item.rating.rate}}</td>
+            <td class="rating-stars">
+              <span *ngFor="let item of getStars(item.rating.rate)">&#9733;</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

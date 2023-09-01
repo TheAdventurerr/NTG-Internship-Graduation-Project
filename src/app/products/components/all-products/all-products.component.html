@@ -1,0 +1,16 @@
+<div class="back">
+<app-store-nav></app-store-nav>
+<div class="home">
+        <div class="my-2 w-25 " style="margin-left: 1%;">
+            <app-select [data]="categories" [title]="'Categories : '" (selectedValue)="filterCategory($event)"></app-select>
+        </div>
+        <div class="row" *ngIf="!loading">
+            <div class="col-md-4" *ngFor="let item of products">
+                <app-product [data]="item" (item)="addToCart($event)"></app-product>
+            </div>
+        </div>
+        <br>
+        <div class="text-center w-100" *ngIf="loading"><app-spinner></app-spinner></div>
+</div>
+<app-footer></app-footer>
+</div>

@@ -1,0 +1,21 @@
+img{
+    transition: 0.3s ease-in-out;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+   img:hover{
+  
+    transition: 0.3s ease-in-out;
+    transform: scale(1.5);
+  
+  }
+.backk{
+  background-color: #f1e2bb;
+}
+
+td.rating-stars {
+  color: #ffa41c;
+  font-size: 1.5em; /* Adjust the font size as needed */
+}

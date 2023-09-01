@@ -1,0 +1,29 @@
+<div class="back">
+<div class="box">
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            <img src="{{data.image}}" alt="">
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <div class="info">
+                <ul class="list-unstyled">
+                    <li><strong>Title : </strong>{{data.title}}</li>
+                    <li><strong>Category : </strong>{{data.category}}</li>
+                    <li><strong>Description : </strong>{{data.description}}</li>
+                    <li>
+                    <li>
+                        <strong>Rating : </strong>{{data.rating.rate}}
+                        <span  [class.checked]="data.rating.rate>=1">&#9733;</span>
+                        <span  [class.checked]="data.rating.rate>=2">&#9733;</span>
+                        <span  [class.checked]="data.rating.rate>=3">&#9733;</span>
+                        <span  [class.checked]="data.rating.rate>=4">&#9733;</span>
+                        <span  [class.checked]="data.rating.rate>=5">&#9733;</span>
+                    </li>
+                    <li><strong>Count : </strong>{{data.rating.count}}</li>
+                    <li><strong>Price : </strong>{{data.price}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

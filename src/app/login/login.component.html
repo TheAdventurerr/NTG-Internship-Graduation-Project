@@ -1,0 +1,14 @@
+<div class="full-screen">
+    <video src="../assets/Videos/loginbackground.mp4" loop="true" autoplay="autoplay" ></video>
+  </div>
+  <body>
+
+    <form class="box" (ngSubmit)="login()">
+      <img src="../../assets/Images/Storelogo.png" alt="" id="im" (click)="playVideo()">
+      <h1><img src="../../assets/Images/user-profile.png" alt="" id="imgg"> Sign in</h1>
+
+      <input type="text" placeholder="Username" [(ngModel)]="username" name="username" (click)="playVideo()">
+      <input type="password" placeholder="Password" [(ngModel)]="password" name="password" (click)="playVideo()">
+      <input type="submit" value="Sign in">
+    </form>
+      </body>
